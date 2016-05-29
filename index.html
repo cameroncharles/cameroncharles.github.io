@@ -1,13 +1,597 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <iframe
-      width="100%"
-      height="600px"
-      allowfullscreen=""
-      frameborder="0"
-      src="vrview/index.html??image=/vr_images/wedding.vr-converted.jpg&is_stereo=true">
-    </iframe>
-    <hr/>
+	<head>
+
+		<!-- Import Google Icon Font -->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Import materialize.css -->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<!-- Let browser know website is optimized for mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  
+	  	<style>
+			body { 
+				background-image: url('res/cardboard_camera_sm.png'), url('res/google_cardboard_sm.png');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-position: right 20px bottom 10px, left 20px bottom 10px;
+				background-size: 150px, 150px;
+			}
+			
+			nav .brand-logo-image {
+				padding-top:15px;
+				padding-left:10px;
+				padding-right:10px;
+			}
+			
+		</style>
+    </head>
+
+    <body>
+		<!-- Import jQuery before materialize.js -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<!-- Content Start -->
+		<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper brown darken-2">
+				<img class="brand-logo-image" src='res/CodeRoyalBannerTransDark.png' height='55dp'/>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="https://developers.google.com/vr/concepts/vrview#supported_platforms">VR View</a></li>
+					<li><a href="https://codelabs.developers.google.com/codelabs/vr_view_101/">How To</a></li>
+					<li><a href="https://storage.googleapis.com/cardboard-camera-converter/index.html">Image Converter</a></li>
+				</ul>
+			</div>
+		 </nav>
+		 </div>
+		 
+		<div class="container">
+			<h2>Google Cardboard Camera Showcase -- BETA --</h2>
+			<p class="flow-text">
+			The following is a collection of 'VR' photos or more technically Stereoscopic 360° Panaromas,
+			taken with Google's<a href="https://play.google.com/store/apps/details?id=com.google.vr.cyclops&hl=en"> Cardboard Camera</a> app.<br/>
+			These photos were all taken by me locally and during my travels to the wonderful country of Ukraine.<br/>
+			Enjoy!
+			</p>
+			<hr>
+			<h3>Ukraine: Kiev</h3>
+			<p class="flow-text">Various photos from around the beautiful capital of Ukraine, Kiev during late Spring.</p>
+			
+			<div class="row">
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/kiev_1.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Shevchenko Park: Art<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=kiev_1">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Shevchenko Park: Art<i class="material-icons right">close</i></span>
+							<p>An art installation that can seen on trees all over Kiev but the density of trees here really enhances the feelings.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Taras_Shevchenko">Wikipedia: Taras Shevchenko</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/kiev_2.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Shevchenko Park: Statue<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=kiev_2">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Shevchenko Park: Statue<i class="material-icons right">close</i></span>
+							<p>Statue of Taras Shevchenko, one of the greatest Ukrainian literary figures, for whom the Park and the University across the street is named.</p>
+							<p>The University's famous Red building can also be seen in the photo directly across from the statue's gaze.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Taras_Shevchenko">Wikipedia: Taras Shevchenko</a></p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+				<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/kiev_3.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">National Botanical Garden 1<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=kiev_3">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">National Botanical Garden 1<i class="material-icons right">close</i></span>
+							<p>View from the top of a hill in the Hryshko National Botanical Garden </p>
+							<p><a href="https://en.wikipedia.org/wiki/Hryshko_National_Botanical_Garden">Wikipedia: Botanical Gardens</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			
+			<div class="row">
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/kiev_4.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">National Botanical Garden 2<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=kiev_4">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">National Botanical Garden 2<i class="material-icons right">close</i></span>
+							<p>View of the Vydubychi Monastery located on the Hryshko National Botanical Garden grounds from above the lilac section.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Hryshko_National_Botanical_Garden">Wikipedia: Botanical Gardens</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/kiev_5.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Saint Sophia's Cathedral<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=kiev_5">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Saint Sophia's Cathedral<i class="material-icons right">close</i></span>
+							<p>View of the grounds in front of the bell tower that serves as the public entry to Saint Sophia's Cathedral, which itself is also visible in the photo to the left of the tower.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Saint_Sophia%27s_Cathedral,_Kiev">Wikipedia: Saint Sophia's Cathedral</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+				<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/kiev_6.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Night View of City<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=kiev_6">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Night View of City<i class="material-icons right">close</i></span>
+							<p>(Poorly exposed) Night time view of city from the b-hush Rooftop Lounge Bar at the top of the Intercontinental Hotel, shortly before they turned all the cathedral lights off for the night.</p>
+							<p><a href="http://www.intercontinental-kiev.com/restaurantandbars/bhush-en.html">Website</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/kiev_7.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Park of Eternal Glory<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=kiev_7">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Park of Eternal Glory<i class="material-icons right">close</i></span>
+							<p>Sunrise over the city from the Eternal Flame monument to the unknown Soldiers of WWII.</p>
+							<p><a href="http://www.enjoyukraine.info/article/The-Park-of-Eternal-Glory.html">Website</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/wedding.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Kiev: Wedding Venue<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=wedding">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Kiev: Wedding Venue<i class="material-icons right">close</i></span>
+							<p>The whole reason i was in Ukraine and in particular Kiev, the wedding, held in this beautiful tent on the gorgeous grounds of the bakkara hotel right on the river shore.</p>
+							<p><a href="http://bakkara-hotel.com.ua/en/">Website</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+						
+			<hr/><!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			
+			<h3>Ukraine: Lviv</h3>
+			<p class="flow-text">Pair of photos from Lviv, a historic city full of ancient buildings that has successfully transformed into a tourist wonder.</p>
+			
+			<div class="row">
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/lviv_1.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Town Hall Bell Tower<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=lviv_1">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Town Hall Bell Tower<i class="material-icons right">close</i></span>
+							<p>The amazing view of the city from atop the current reincarnation of the ancient town hall bell tower.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Lviv_Town_Hall">Wikipedia: Lviv Town Hall</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/lviv_2.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Open Air Museum<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=lviv_2">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Open Air Museum<i class="material-icons right">close</i></span>
+							<p>A collection of beehives, still used to this day, from the Museum of Folk Architecture and Rural Life.</p>
+							<p><a href="http://en.lvivskansen.org/">Website</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<hr/><!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			
+			<h3>Ukraine: Chornobyl</h3>
+			<p class="flow-text">Large set of photos from the Chornobyl exclusion zone, in place since the infamous 1986 disaster.</p>
+			
+			<div class="row">
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/chornobyl_1.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Abandoned House<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=chornobyl_1">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Abandoned House<i class="material-icons right">close</i></span>
+							<p>Random abandoned house not far into the Exclusion Zone.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Chernobyl">Wikipedia: Chornobyl</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/chornobyl_2.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Monument to Lost Villages<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=chornobyl_2">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Monument to Lost Villages<i class="material-icons right">close</i></span>
+							<p>A monument to all the villages that were razed by the liquidators shortly after the disaster in an effort to reduce the radiation levels.</p>
+							<p>Each candle holder on the cement representation of the exclusion zone represents one of the 97 villages lost.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Chernobyl_disaster">Wikipedia: Chornobyl Disaster</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/chornobyl_3.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Duga radar<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=chornobyl_3">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Duga radar<i class="material-icons right">close</i></span>
+							<p>Large Soviet radar system that formed part of the Early Warning System that was, ironically, listening for nuclear threats from external sources.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Duga_radar">Wikipedia: Duga Radar</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/chornobyl_4.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Reactor Number 4<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=chornobyl_4">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Reactor Number 4<i class="material-icons right">close</i></span>
+							<p>Taken from the nearby memorial for the heroic workers who lost their lives trying to extinguish the highly radioactive flames immediately after the disaster.</p>
+							<p>To the left beyond the memorial is Reactor Number 4, the catalyst of the disaster, to the right is the 'New Safe Confinement' that will encase the still radioactive reactor for the next 100 years.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Chernobyl_New_Safe_Confinement">Wikipedia: New Safe Confinement</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/chornobyl_5.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Pripyat: Ferris Wheel<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=chornobyl_5">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Pripyat: Ferris Wheel<i class="material-icons right">close</i></span>
+							<p>A shot from the now barren fairgrounds that house the famous ferris wheel, bumper cars and other attractions that comprised the Pripyat Amusement Park</p>
+							<p><a href="https://en.wikipedia.org/wiki/Pripyat_amusement_park">Wikipedia: Pripyat Amusement Park</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/chornobyl_6.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Pripyat: Swimming Pool<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=chornobyl_6">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Pripyat: Swimming Pool<i class="material-icons right">close</i></span>
+							<p>Part of Pripyat's Palace of Culture the swimming pool was actually still operational for a decade after the disaster, though it is now as lost to time as the rest of the city.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Pripyat">Wikipedia: Pripyat</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/chornobyl_7.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Pripyat: Classroom<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=chornobyl_7">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Pripyat: Classroom<i class="material-icons right">close</i></span>
+							<p>View of a classroom from Middle School Number 3 in central Pripyat, although some parts were obviously staged the ominous feelings of abandonment still linger.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Pripyat">Wikipedia: Pripyat</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/chornobyl_8.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Pripyat: Rooftop 1<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=chornobyl_8">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Pripyat: Rooftop 1<i class="material-icons right">close</i></span>
+							<p>View of Pripyat from the top of an apartment building in the city center. The reclaimed by nature state of the city is very obvious from this angle.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Pripyat">Wikipedia: Pripyat</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/chornobyl_9.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Pripyat: Rooftop 2<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=chornobyl_9">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Pripyat: Rooftop 2<i class="material-icons right">close</i></span>
+							<p>View of Pripyat from the top of an apartment building in the city center. The reclaimed by nature state of the city is very obvious from this angle.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Pripyat">Wikipedia: Pripyat</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+						
+			<hr/><!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			
+			<h3>Circular Quay</h3>
+			<p class="flow-text">Sydney's famous circular quay home of the Opera House, Harbour Bridge and many other attractions.</p>
+			
+			<div class="row">
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/circular_key.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Circular Quay<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=circular_key">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Circular Quay<i class="material-icons right">close</i></span>
+							<p>Taken from the pier just below the Opera House itself, the House, Bridge and ferry docks can all be seen here.</p>
+							<p><a href="https://en.wikipedia.org/wiki/Circular_Quay">Wikipedia: Circular Quay</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<hr/><!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			
+			<h3>Coomera Springs</h3>
+			<p class="flow-text">Located in the Queensland Suburb of Coomera the Springs is an environmentally focused community built around a beautiful lake.</p>
+			
+			<div class="row">
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/coomera_springs_1.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Coomera Springs 1<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=coomera_springs_1">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Coomera Springs 1<i class="material-icons right">close</i></span>
+							<p>These photos were orginally taken as part of a location scouting trip for a wedding, although the location wasn't used it was very nice.</p>
+							<p><a href="http://coomerasprings.com.au/">Website</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/coomera_springs_2.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Coomera Springs 2<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=coomera_springs_2">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Coomera Springs 2<i class="material-icons right">close</i></span>
+							<p>These photos were orginally taken as part of a location scouting trip for a wedding, although the location wasn't used it was very nice.</p>
+							<p><a href="http://coomerasprings.com.au/">Website</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/coomera_springs_3.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Coomera Springs 3<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=coomera_springs_3">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Coomera Springs 3<i class="material-icons right">close</i></span>
+							<p>These photos were orginally taken as part of a location scouting trip for a wedding, although the location wasn't used it was very nice.</p>
+							<p><a href="http://coomerasprings.com.au/">Website</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<hr/><!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			
+			<h3>Khanacross</h3>
+			<p class="flow-text">Some shots from the pits during a khanacross event at Launceston's Silverdome complex.</p>
+			
+			<div class="row">
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/khanacross_1.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Khanacross 1<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=khanacross_1">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Khanacross 1<i class="material-icons right">close</i></span>
+							<p>View from the pits of layout 1</p>
+							<p><a href="https://www.facebook.com/garageNEARMISS">Website: NearMiss</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/khanacross_2.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Khanacross 2<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=khanacross_2">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Khanacross 2<i class="material-icons right">close</i></span>
+							<p>View from the pits of layout 1</p>
+							<p><a href="http://www.msct.com.au/">Website: MSCT</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/khanacross_3.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Khanacross 3<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=khanacross_3">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Khanacross 3<i class="material-icons right">close</i></span>
+							<p>View from the pits of layout 2</p>
+							<p><a href="https://www.facebook.com/garageNEARMISS">Website: NearMiss</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<hr/><!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			
+			<h3>My S12</h3>
+			<p class="flow-text">Early Shots taken not long after the release of Cardboard Camera of my Nissan S12 Silvia.</p>
+			
+			<div class="row">
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/s12_carkpark_1.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">S12 1<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=s12_carkpark_1">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">S12 1<i class="material-icons right">close</i></span>
+							<p>Carpark from afar.</p>
+							<p><a href="https://www.facebook.com/groups/s12silvia/">S12 Silvia Facebook Group</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/s12_carkpark_2.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">S12 2<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=s12_carkpark_2">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">S12 2<i class="material-icons right">close</i></span>
+							<p>Carpark close up.</p>
+							<p><a href="https://www.facebook.com/groups/s12silvia/">S12 Silvia Facebook Group</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card small">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="/vr_images/s12_interior.prev.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">S12: Interior<i class="material-icons right card-title grey-text text-darken-4">more_vert</i></span>
+							<p><a href="/viewer.html?image_key=s12_interior">View in VR</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">S12 3<i class="material-icons right">close</i></span>
+							<p>Interior view.</p>
+							<p><a href="https://www.facebook.com/groups/s12silvia/">S12 Silvia Facebook Group</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<hr/>
+			<h4>FIN</h4>
+		</div>
   </body>
 </html>
