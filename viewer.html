@@ -8,10 +8,16 @@
 				for (var i=0; i<parms.length; i++) {
 					var pos = parms[i].indexOf('=');
 					if (pos > 0  && search_for == parms[i].substring(0,pos)) {
-						document.getElementById("vr_image").src="vrview/index.html?image=/vr_images/"+parms[i].substring(pos+1)+".vr-converted.jpg&is_stereo=true";
+						return parms[i].substring(pos+1);
 					}
 				}
 				return "";
+			}
+			
+			function key_it() {
+				var image = qs("image_key");
+				var yaw = qs("yaw_key");
+				document.getElementById("vr_image").src = "vrview/index.html?image=/vr_images/" + image + ".vr-converted.jpg&is_stereo=true&start_yaw=" + yaw;
 			}
 		</script>
 		
@@ -33,8 +39,10 @@
 			style="height: 100vh;"
 			allowfullscreen=""
 			frameborder="0"
-			src="vrview/index.html?image=/vr_images/.vr-converted.jpg&is_stereo=true">
+			src="vrview/index.html?image=/vr_images/.vr-converted.jpg&is_stereo=true&start_yaw=0">
 		</iframe>
-		<script>qs("image_key");</script>
+		<script>
+			key_it()
+		</script>
 	</body>
 </html>
